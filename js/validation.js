@@ -1,4 +1,3 @@
-// js/validation.js
 
 document.addEventListener('DOMContentLoaded', () => {
     
