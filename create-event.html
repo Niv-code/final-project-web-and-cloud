@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="he" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LONEWOLF - Create Event</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validation.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">Create Event</div>
+            <a href="index.html" style="text-decoration: none; color: var(--text-main); font-weight: bold; font-size: 1.2rem;">✕</a>
+        </header>
+
+        <main class="content">
+            <div class="form-wrapper">
+                <form id="createEventForm" novalidate>
+                    <div class="form-group">
+                        <label for="eventTitle">Event title*</label>
+                        <input type="text" id="eventTitle" class="form-control" placeholder="e.g, Pickle ball">
+                        <span class="error-message" id="titleError">This field is required.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eventCategory">Category*</label>
+                        <select id="eventCategory" class="form-control">
+                            <option value="">Select Category</option>
+                            <option value="sports">Sports</option>
+                            <option value="social">Social</option>
+                            <option value="learning">Learning</option>
+                        </select>
+                        <span class="error-message" id="categoryError">Please select a category.</span>
+                    </div>
+
+                    <div style="display: flex; gap: 16px;">
+                        <div class="form-group" style="flex: 1;">
+                            <label for="eventDate">Date</label>
+                            <input type="date" id="eventDate" class="form-control">
+                        </div>
+                        <div class="form-group" style="flex: 1;">
+                            <label for="eventTime">Time</label>
+                            <input type="time" id="eventTime" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eventLocation">Location</label>
+                        <input type="text" id="eventLocation" class="form-control" placeholder="e.g., Central Park">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eventCapacity">Capacity</label>
+                        <input type="number" id="eventCapacity" class="form-control" placeholder="Enter maximum capacity">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eventDescription">Description*</label>
+                        <textarea id="eventDescription" class="form-control" placeholder="Tell people what to expect!"></textarea>
+                        <span class="error-message" id="descError">Description must be at least 10 characters.</span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn-submit btn-cancel" onclick="window.location.href='index.html'">Cancel</button>
+                        <button type="submit" class="btn-submit">Apply</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
