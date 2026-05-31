@@ -1,3 +1,4 @@
+/*Niv Horvitz Niv Badichi*/
 const eventsData = [
   {
     id: 1,
