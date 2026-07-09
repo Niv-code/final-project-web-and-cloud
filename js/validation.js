@@ -1,4 +1,3 @@
-/*Niv Horvitz Niv Badichi*/
 document.addEventListener('DOMContentLoaded', () => {
     
     const form = document.getElementById('createEventForm');
